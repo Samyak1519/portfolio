@@ -1,6 +1,33 @@
 @import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
+
+@theme {
+  --color-background: #050505;
+  --color-card: #111111;
+  --color-accent: #00BFFF;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --font-display: "Inter", sans-serif;
+}
+
+/* Custom scrollbar for that modern look */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
 
 body {
-  font-family: Inter, sans-serif;
-  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  background-color: var(--color-background);
+  color: white;
+  font-family: var(--font-display);
+  overflow-x: hidden;
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -6,12 +7,11 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 
-export default function App() {
+function App() {
   return (
-    <div className="bg-[#f8fafc] text-gray-900 min-h-screen">
+    <div className="bg-background text-white selection:bg-accent selection:text-black">
       <Navbar />
-
-      <main className="max-w-6xl mx-auto px-6">
+      <main className="max-w-7xl mx-auto px-6 md:px-12">
         <Hero />
         <About />
         <Experience />
@@ -22,3 +22,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

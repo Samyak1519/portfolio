@@ -1,8 +1,44 @@
-export default function Contact() {
+import React from "react";
+import { basicInfo } from "../data/portfolioData";
+import { ArrowUpRight } from "lucide-react";
+
+const Contact = () => {
   return (
-    <section id="contact" className="py-24">
-      <h2 className="text-3xl font-semibold mb-6">Contact</h2>
-      <p className="text-gray-600">samnimsarkar@gmail.com</p>
-    </section>
+    <footer id="contact" className="pt-20 pb-10 border-t border-border">
+      <div className="text-center mb-20">
+        <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 italic">
+          LET'S BUILD <br />{" "}
+          <span className="text-accent text-outline">TOGETHER</span>
+        </h2>
+        <a
+          href={`mailto:${basicInfo.email}`}
+          className="text-2xl md:text-3xl font-light hover:text-accent transition-colors border-b border-gray-800 pb-2"
+        >
+          {basicInfo.email}
+        </a>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm font-mono">
+        <div className="flex gap-8">
+          <a
+            href={basicInfo.socials.github}
+            target="_blank"
+            className="flex items-center gap-1 hover:text-white transition-colors"
+          >
+            GITHUB <ArrowUpRight size={14} />
+          </a>
+          <a
+            href={basicInfo.socials.linkedin}
+            target="_blank"
+            className="flex items-center gap-1 hover:text-white transition-colors"
+          >
+            LINKEDIN <ArrowUpRight size={14} />
+          </a>
+        </div>
+        <p>© 2026 {basicInfo.name}. All rights reserved.</p>
+      </div>
+    </footer>
   );
-}
+};
+
+export default Contact;
