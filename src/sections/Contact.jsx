@@ -1,6 +1,5 @@
-import React from "react";
-import { basicInfo } from "../data/portfolioData";
 import { ArrowUpRight } from "lucide-react";
+import { basicInfo } from "../data/portfolioData";
 
 const Contact = () => {
   return (
