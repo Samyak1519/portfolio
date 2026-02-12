@@ -13,7 +13,7 @@ const About = () => {
           <p className="text-2xl md:text-4xl font-medium leading-tight tracking-tight">
             Front-End Developer with around 2 years of experience building{" "}
             <span className="text-accent">scalable, high-performance</span> web
-            applications. Skilled in React.js with expertise in blockchain
+            applications. Skilled in Rea ct.js with expertise in blockchain
             dashboards and{" "}
             <span className="text-gray-500">performance optimization</span>.
           </p>
