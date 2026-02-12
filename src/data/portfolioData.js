@@ -5,6 +5,7 @@ export const basicInfo = {
   role: "Software Developer",
   location: "Pune, Maharashtra",
   email: "samnimsarkar@gmail.com",
+  phone: "+91 9067096208",
   socials: {
     github: "https://github.com/Samyak1519",
     linkedin: "https://www.linkedin.com/in/samyak-nimsarkar-752877176/",
