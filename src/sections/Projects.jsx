@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="py-20">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
         <div>
-          <h2 className="text-xs font-mono text-gray-500 uppercase tracking-[0.3em] mb-4">
+          <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-4">
             Selected Work
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold tracking-tight">

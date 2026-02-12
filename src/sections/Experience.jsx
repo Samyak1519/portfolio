@@ -1,10 +1,9 @@
-import React from "react";
 import { experiences } from "../data/portfolioData";
 
 const Experience = () => {
   return (
     <section id="experience" className="py-20">
-      <h2 className="text-xs font-mono text-gray-500 uppercase tracking-[0.3em] mb-12">
+      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-12">
         Professional Path
       </h2>
 
@@ -14,7 +13,7 @@ const Experience = () => {
             key={index}
             className="grid grid-cols-1 md:grid-cols-12 gap-4 group"
           >
-            <div className="md:col-span-3 text-gray-500 font-mono text-sm">
+            <div className="md:col-span-3 text-gray-400 font-mono text-sm">
               {exp.date}
             </div>
 

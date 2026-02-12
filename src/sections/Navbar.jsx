@@ -1,6 +1,3 @@
-import React from "react";
-import { basicInfo } from "../data/portfolioData";
-
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center p-6">
@@ -22,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href={`mailto:${basicInfo.email}`}
+          href="#contact"
           className="bg-white text-black text-xs font-bold px-5 py-2 rounded-full hover:bg-accent transition-colors uppercase tracking-tight"
         >
           Let's Talk

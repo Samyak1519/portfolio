@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="py-20 border-t border-border">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-4">
-          <h2 className="text-xs font-mono text-gray-500 uppercase tracking-[0.3em]">
+          <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em]">
             Biography
           </h2>
         </div>

@@ -26,7 +26,7 @@ export const experiences = [
     ],
   },
   {
-    company: "FirstCry",
+    company: "FirstCry.com",
     role: "Software Developer",
     date: "Jan 2024 – Aug 2025",
     description: [
