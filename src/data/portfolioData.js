@@ -27,7 +27,7 @@ export const experiences = [
     ],
   },
   {
-    company: "FirstCry.com",
+    company: "FirstCry.com (Brainbees Solution Ltd.)",
     role: "Software Developer",
     date: "Jan 2024 – Aug 2025",
     description: [
