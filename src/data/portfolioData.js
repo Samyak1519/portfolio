@@ -19,7 +19,7 @@ export const experiences = [
   {
     company: "InteliSync",
     role: "Frontend Developer",
-    date: "Aug 2025 – Nov 2025",
+    date: "Aug 2025 – Dec 2025",
     description: [
       "Built scalable React frontends for blockchain and Web3 applications",
       "Designed reusable UI components and improved performance",
