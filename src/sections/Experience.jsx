@@ -2,12 +2,15 @@ import { experiences } from "../data/portfolioData";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20">
-      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-12">
+    <section
+      id="experience"
+      className="py-14 md:py-20 scroll-mt-28 md:scroll-mt-32 border-t border-border"
+    >
+      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-8 md:mb-12">
         Professional Path
       </h2>
 
-      <div className="space-y-16">
+      <div className="space-y-12 md:space-y-16">
         {experiences.map((exp, index) => (
           <div
             key={index}
@@ -18,7 +21,6 @@ const Experience = () => {
             </div>
 
             <div className="md:col-span-9 border-l border-border pl-8 relative pb-4">
-              {/* Timeline Dot */}
               <div className="absolute -left-1.25 top-0 h-2 w-2 rounded-full bg-border group-hover:bg-accent transition-colors"></div>
 
               <h3 className="text-2xl font-bold">{exp.role}</h3>

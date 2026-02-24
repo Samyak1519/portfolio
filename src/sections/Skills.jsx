@@ -21,12 +21,15 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
-      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-12">
+    <section
+      id="skills"
+      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
+    >
+      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-8 md:mb-12">
         Technical Arsenal
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6">
         {/* Frontend Box */}
         <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">

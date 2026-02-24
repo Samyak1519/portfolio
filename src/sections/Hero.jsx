@@ -3,7 +3,7 @@ import { basicInfo } from "../data/portfolioData";
 
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center pt-32 pb-16">
+    <section className="min-h-[85vh] flex flex-col justify-center pt-28 md:pt-32 pb-10 md:pb-16 border-t border-border">
       {/* TEXT */}
       <div className="space-y-6">
         <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter leading-[0.9]">

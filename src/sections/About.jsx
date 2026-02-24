@@ -2,10 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 border-t border-border">
+    <section
+      id="about"
+      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
+    >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-4">
-          <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em]">
+          <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-8 md:mb-12">
             About Me
           </h2>
         </div>

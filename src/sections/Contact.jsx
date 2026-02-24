@@ -4,8 +4,11 @@ import { basicInfo } from "../data/portfolioData";
 
 const Contact = () => {
   return (
-    <footer id="contact" className="pt-20 pb-10 border-t border-border">
-      <div className="text-center mb-20">
+    <footer
+      id="contact"
+      className="pt-16 md:pt-20 pb-8 md:pb-10 border-t border-border scroll-mt-28 md:scroll-mt-32"
+    >
+      <div className="text-center mb-16 md:mb-20">
         <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 ">
           LET'S BUILD <br />
           <span className="text-accent text-outline">TOGETHER</span>

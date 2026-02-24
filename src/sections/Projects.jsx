@@ -4,8 +4,11 @@ import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16">
-      <div className="mb-10">
+    <section
+      id="projects"
+      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
+    >
+      <div className="mb-8 md:mb-12">
         <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-2">
           Selected Work
         </h2>
@@ -18,7 +21,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group relative bg-card border-[0.5px] border-white/10 rounded-[1.5rem] overflow-hidden shadow-sm"
+            className="group relative bg-card border-[0.5px] border-white/10 rounded-3xl overflow-hidden shadow-sm"
           >
             {/* 55/45 Split using a 20-column grid for pixel-perfect precision */}
             <div className="flex flex-col-reverse md:grid md:grid-cols-20 w-full items-stretch">
@@ -65,7 +68,7 @@ const Projects = () => {
 
               {/* Visual Preview (9/20 = 45% width) */}
               <div className="md:col-span-9 relative bg-[#0a0a0a] p-6 flex items-center justify-center border-b md:border-b-0 md:border-l border-white/10">
-                <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden border border-white/5 shadow-2xl bg-[#050505]">
+                <div className="relative w-full aspect-16/10 rounded-lg overflow-hidden border border-white/5 shadow-2xl bg-[#050505]">
                   <div className="absolute inset-0 w-[1280px] h-[800px] origin-top-left scale-[0.28] sm:scale-[0.35] md:scale-[0.28] lg:scale-[0.4] xl:scale-[0.5]">
                     <iframe
                       src={project.link}

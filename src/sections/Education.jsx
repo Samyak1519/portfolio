@@ -2,12 +2,15 @@ import { education } from "../data/portfolioData";
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 border-t border-border">
-      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-12">
+    <section
+      id="education"
+      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
+    >
+      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-8 md:mb-12">
         Education
       </h2>
 
-      <div className="space-y-16">
+      <div className="space-y-12 md:space-y-16">
         {education.map((edu, index) => (
           <div
             key={index}

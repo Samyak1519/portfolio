@@ -13,13 +13,24 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 🔥 scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center p-4 md:p-6">
       <div className="flex items-center justify-between w-full max-w-7xl bg-card/60 backdrop-blur-md border border-white/10 px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300">
-        {/* Logo */}
-        <div className="text-xl md:text-2xl font-bold tracking-tighter">
+        {/* Logo → Click to top */}
+        <button
+          onClick={scrollToTop}
+          className="text-xl md:text-2xl font-bold tracking-tighter hover:opacity-80 transition cursor-pointer"
+        >
           SN<span className="text-accent">.</span>
-        </div>
+        </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-10 text-s font-mono uppercase tracking-widest text-gray-500">
@@ -45,7 +56,7 @@ const Navbar = () => {
             <span className="hidden md:inline">Let's Talk</span>
           </a>
 
-          {/* Resume (last, appears after scroll) */}
+          {/* Resume */}
           {showResume && (
             <a
               href="/Samyak Resume.pdf"
