@@ -1,4 +1,4 @@
-import { GraduationCap, Building2 } from "lucide-react";
+import { Building2, GraduationCap } from "lucide-react";
 import { education } from "../data/portfolioData";
 
 const Education = () => {

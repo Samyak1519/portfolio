@@ -38,7 +38,7 @@ const Skills = () => {
       {/* 3 CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6">
         {/* FRONTEND */}
-        <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
+        <div className="bg-card border border-border p-6 md:p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
             <Globe size={20} className="text-accent opacity-80 shrink-0" />
             <h3 className="text-lg font-bold">Frontend</h3>
@@ -48,7 +48,7 @@ const Skills = () => {
             {frontend.map((s) => (
               <span
                 key={s}
-                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
+                className="px-3 py-1 rounded-full text-[12px] bg-white/3 border border-white/6 text-gray-300 hover:border-accent/40 hover:text-white transition"
               >
                 {s}
               </span>
@@ -57,7 +57,7 @@ const Skills = () => {
         </div>
 
         {/* BACKEND */}
-        <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
+        <div className="bg-card border border-border p-6 md:p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
             <Cpu size={20} className="text-accent opacity-80 shrink-0" />
             <h3 className="text-lg font-bold">Backend & Core</h3>
@@ -67,7 +67,7 @@ const Skills = () => {
             {backend.map((s) => (
               <span
                 key={s}
-                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
+                className="px-3 py-1 rounded-full text-[12px] bg-white/3 border border-white/6 text-gray-300 hover:border-accent/40 hover:text-white transition"
               >
                 {s}
               </span>
@@ -76,7 +76,7 @@ const Skills = () => {
         </div>
 
         {/* TOOLS */}
-        <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
+        <div className="bg-card border border-border p-6 md:p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
             <ShieldCheck
               size={20}
@@ -89,7 +89,7 @@ const Skills = () => {
             {devopsTesting.map((s) => (
               <span
                 key={s}
-                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
+                className="px-3 py-1 rounded-full text-[12px] bg-white/3 border border-white/6 text-gray-300 hover:border-accent/40 hover:text-white transition"
               >
                 {s}
               </span>
@@ -99,7 +99,7 @@ const Skills = () => {
       </div>
 
       {/* AI BAR */}
-      <div className="bg-card border border-border p-8 rounded-4xl flex flex-col md:flex-row items-center justify-between gap-7">
+      <div className="bg-card border border-border p-6 md:p-8 rounded-3xl flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div className="flex items-center gap-3">
           <Sparkles size={18} className="text-accent opacity-80 shrink-0" />
           <span className="text-md font-medium">AI-Enhanced Workflow:</span>
@@ -109,7 +109,7 @@ const Skills = () => {
           {aiTools.map((tool) => (
             <span
               key={tool}
-              className="text-[13px] text-white/85 bg-white/5 px-4 py-1.5 rounded-full border border-white/10 hover:border-accent/40 hover:bg-white/10 transition"
+              className="text-[12px] text-gray-300 bg-white/4 px-3 py-1 rounded-full border border-white/8 hover:border-accent/40 hover:text-white transition"
             >
               {tool}
             </span>

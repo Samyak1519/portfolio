@@ -3,7 +3,15 @@ import { basicInfo } from "../data/portfolioData";
 
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center pt-28 md:pt-32 pb-10 md:pb-16 border-t border-border">
+    <section
+      className="
+      min-h-[80vh]
+      flex flex-col justify-center
+      pt-24 md:pt-32
+      pb-6 md:pb-16
+      border-t border-border
+    "
+    >
       {/* TEXT */}
       <div className="space-y-6">
         <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter leading-[0.9]">
@@ -21,14 +29,13 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-14 flex flex-col items-start gap-6">
+      {/* BUTTON AREA */}
+      <div className="mt-12 md:mt-14 flex flex-col items-start gap-6">
         {/* PRIMARY */}
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="px-8 py-4 bg-white text-black font-bold rounded-full 
-  hover:bg-accent transition-all duration-300 
-  flex items-center gap-2 group"
+            className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-accent transition-all duration-300 flex items-center gap-2 group"
           >
             View Projects
             <ArrowRight

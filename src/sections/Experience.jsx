@@ -1,5 +1,5 @@
-import { experiences } from "../data/portfolioData";
 import { Briefcase, Building2 } from "lucide-react";
+import { experiences } from "../data/portfolioData";
 
 const Experience = () => {
   return (
