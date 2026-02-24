@@ -1,10 +1,10 @@
-import React from "react";
-import { Github, ExternalLink, Download } from "lucide-react";
+import { Download, ExternalLink, Github } from "lucide-react";
 import { basicInfo } from "../data/portfolioData";
 
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center items-start pt-32 pb-16">
+    <section className="min-h-[85vh] flex flex-col justify-center pt-32 pb-16">
+      {/* TEXT */}
       <div className="space-y-6">
         <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter leading-[0.9]">
           {basicInfo.name.split(" ")[0]} <br />
@@ -21,42 +21,49 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-12 flex flex-wrap gap-4">
-        {/* Primary CTA */}
-        <a
-          href="#projects"
-          className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-accent transition-all duration-300"
-        >
-          View Projects
-        </a>
+      <div className="mt-14 flex flex-col items-start gap-6">
+        {/* PRIMARY */}
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-accent transition-all duration-300"
+          >
+            View Projects
+          </a>
 
-        {/* GitHub Button */}
-        <a
-          href={basicInfo.socials.github}
-          target="_blank"
-          rel="noreferrer"
-          className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center gap-2 group"
-        >
-          GitHub{" "}
-          <Github
-            size={18}
-            className="group-hover:text-accent transition-colors"
-          />
-        </a>
+          <a
+            href="/Samyak Resume.pdf"
+            download="Samyak_Nimsarkar_Resume.pdf"
+            className="px-8 py-4 bg-accent text-black font-bold rounded-full hover:opacity-90 transition-all duration-300 flex items-center gap-2 shadow-[0_0_25px_rgba(0,200,255,0.25)]"
+          >
+            Resume <Download size={18} />
+          </a>
+        </div>
 
-        {/* LinkedIn Button */}
-        <a
-          href={basicInfo.socials.linkedin}
-          target="_blank"
-          rel="noreferrer"
-          className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center gap-2 group"
-        >
-          LinkedIn{" "}
-          <ExternalLink
-            size={18}
-            className="group-hover:text-accent transition-colors"
-          />
-        </a>
+        {/* SECONDARY */}
+        <div className="flex items-center gap-5 text-sm text-gray-400 pl-1.5">
+          <a
+            href={basicInfo.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Github size={16} />
+            GitHub
+          </a>
+
+          <span className="text-gray-600">|</span>
+
+          <a
+            href={basicInfo.socials.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <ExternalLink size={16} />
+            LinkedIn
+          </a>
+        </div>
       </div>
     </section>
   );

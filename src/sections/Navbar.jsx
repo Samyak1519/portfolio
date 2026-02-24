@@ -1,18 +1,28 @@
-import React from "react";
-import { basicInfo } from "../data/portfolioData";
-import { Download, MessageCircle } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Download, Mail } from "lucide-react";
 
 const Navbar = () => {
+  const [showResume, setShowResume] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowResume(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center p-6">
-      <div className="flex items-center justify-between w-full max-w-7xl bg-card/50 backdrop-blur-md border-[0.5px] border-white/10 px-6 py-4 rounded-full">
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center p-4 md:p-6">
+      <div className="flex items-center justify-between w-full max-w-7xl bg-card/60 backdrop-blur-md border border-white/10 px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300">
         {/* Logo */}
-        <div className="text-xl font-bold tracking-tighter pl-2">
+        <div className="text-xl md:text-2xl font-bold tracking-tighter">
           SN<span className="text-accent">.</span>
         </div>
 
-        {/* Desktop Navigation Links */}
-        <div className="hidden md:flex gap-8 text-s font-mono uppercase tracking-widest text-gray-500">
+        {/* Desktop Links */}
+        <div className="hidden md:flex gap-10 text-s font-mono uppercase tracking-widest text-gray-500">
           <a href="#experience" className="hover:text-white transition-colors">
             Experience
           </a>
@@ -24,26 +34,28 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Action Buttons */}
+        {/* Actions */}
         <div className="flex items-center gap-3">
-          {/* Download Resume Button */}
-          <a
-            href="/Samyak Resume.pdf"
-            download="Samyak_Nimsarkar_Resume.pdf"
-            className="flex items-center gap-2 bg-white/5 border border-white/10 text-white text-[10px] md:text-xs font-bold px-4 py-2 rounded-full hover:bg-white/10 transition-colors uppercase tracking-tight"
-          >
-            <Download size={14} className="text-accent" />
-            <span className="hidden sm:inline text-gray-300">Resume</span>
-          </a>
-
-          {/* Let's Talk Button */}
+          {/* Let's Talk */}
           <a
             href="#contact"
-            className="flex items-center gap-2 bg-white text-black text-[10px] md:text-xs font-bold px-5 py-2 rounded-full hover:bg-accent transition-colors uppercase tracking-tight shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+            className="flex items-center gap-2 bg-white text-black text-xs md:text-sm font-semibold px-5 md:px-6 py-2.5 md:py-3 rounded-full hover:bg-accent transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]"
           >
-            <MessageCircle size={14} />
-            Let's Talk
+            <Mail size={16} />
+            <span className="hidden md:inline">Let's Talk</span>
           </a>
+
+          {/* Resume (last, appears after scroll) */}
+          {showResume && (
+            <a
+              href="/Samyak Resume.pdf"
+              download="Samyak_Nimsarkar_Resume.pdf"
+              className="flex items-center gap-2 bg-white/10 border border-white/10 text-white text-xs md:text-sm font-semibold px-5 md:px-6 py-2.5 md:py-3 rounded-full hover:bg-white/20 transition-all duration-300"
+            >
+              <Download size={16} className="text-accent" />
+              <span>Resume</span>
+            </a>
+          )}
         </div>
       </div>
     </nav>

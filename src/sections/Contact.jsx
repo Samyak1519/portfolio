@@ -6,12 +6,11 @@ const Contact = () => {
   return (
     <footer id="contact" className="pt-20 pb-10 border-t border-border">
       <div className="text-center mb-20">
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 italic">
-          LET'S BUILD <br />{" "}
+        <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 ">
+          LET'S BUILD <br />
           <span className="text-accent text-outline">TOGETHER</span>
         </h2>
 
-        {/* Updated Contact Detail section in Contact.jsx */}
         <div className="flex flex-col items-center gap-4">
           <a
             href={`mailto:${basicInfo.email}`}

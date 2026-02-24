@@ -37,7 +37,7 @@ const Skills = () => {
             {frontend.map((s) => (
               <span
                 key={s}
-                className="px-3 py-1 bg-white/5 border border-white/5 rounded-lg text-xs font-medium"
+                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
               >
                 {s}
               </span>
@@ -55,7 +55,7 @@ const Skills = () => {
             {backend.map((s) => (
               <span
                 key={s}
-                className="px-3 py-1 bg-white/5 border border-white/5 rounded-lg text-xs font-medium"
+                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
               >
                 {s}
               </span>
@@ -73,7 +73,7 @@ const Skills = () => {
             {devopsTesting.map((s) => (
               <span
                 key={s}
-                className="px-3 py-1 bg-white/5 border border-white/5 rounded-lg text-xs font-medium"
+                className="px-4 py-1.5 bg-white/5 border border-white/5 rounded-full text-[13px] font-medium"
               >
                 {s}
               </span>
@@ -83,16 +83,16 @@ const Skills = () => {
       </div>
 
       {/* AI Tools Bar */}
-      <div className="bg-card border border-border p-6 rounded-4xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="bg-card border border-border p-8 rounded-4xl flex flex-col md:flex-row items-center justify-between gap-7">
         <div className="flex items-center gap-3">
           <Sparkles className="text-accent shrink-0" size={20} />
-          <span className="text-sm font-medium">AI-Enhanced Workflow:</span>
+          <span className="text-md font-medium">AI-Enhanced Workflow:</span>
         </div>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-3 mt-1">
           {aiTools.map((tool) => (
             <span
               key={tool}
-              className="text-xs text-white/80 bg-white/5 px-4 py-1 rounded-full border border-white/5"
+              className="text-[13px] text-white/85 bg-white/5 px-4 py-1.5 rounded-full border border-white/10 hover:border-accent/40 hover:bg-white/10 transition"
             >
               {tool}
             </span>

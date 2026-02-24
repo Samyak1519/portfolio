@@ -38,6 +38,23 @@ export const experiences = [
   },
 ];
 
+export const education = [
+  {
+    degree: "PG-DAC",
+    field: "Advanced Computing",
+    institute: "Sunbeam Infotech, Pune",
+    university: "CDAC",
+    date: "2023",
+  },
+  {
+    degree: "B.Tech",
+    field: "Computer Science and Engineering",
+    institute: "PES College of Engineering, Aurangabad",
+    university: "DBATU",
+    date: "2018 – 2022",
+  },
+];
+
 export const projects = [
   {
     name: "RetroToonz",
@@ -71,4 +88,4 @@ export const techStack = [
   "Appium",
 ];
 
-export const aiTools = ["ChatGPT", "Google Gemini", "Claude", "Perplexity"];
+export const aiTools = ["ChatGPT", "Claude", "Google Gemini", "Perplexity"];
