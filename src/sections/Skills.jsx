@@ -10,7 +10,9 @@ const Skills = () => {
     "Tailwind CSS",
     "React.js",
   ];
+
   const backend = ["C", "Java", "MySQL", "Node.js", "Express.js", "RestAPI"];
+
   const devopsTesting = [
     "AWS",
     "GitHub",
@@ -23,19 +25,25 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
+      className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-22"
     >
-      <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-8 md:mb-12">
-        Technical Arsenal
-      </h2>
+      {/* SECTION TITLE */}
+      <div className="flex items-center gap-3 mb-8 md:mb-12">
+        <Cpu size={16} className="text-accent opacity-70" />
+        <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em]">
+          Technical Arsenal
+        </h2>
+      </div>
 
+      {/* 3 CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6">
-        {/* Frontend Box */}
+        {/* FRONTEND */}
         <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
-            <Globe className="text-accent shrink-0" size={24} />
+            <Globe size={20} className="text-accent opacity-80 shrink-0" />
             <h3 className="text-lg font-bold">Frontend</h3>
           </div>
+
           <div className="flex flex-wrap gap-2">
             {frontend.map((s) => (
               <span
@@ -48,12 +56,13 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Backend & Systems */}
+        {/* BACKEND */}
         <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
-            <Cpu className="text-accent shrink-0" size={24} />
+            <Cpu size={20} className="text-accent opacity-80 shrink-0" />
             <h3 className="text-lg font-bold">Backend & Core</h3>
           </div>
+
           <div className="flex flex-wrap gap-2">
             {backend.map((s) => (
               <span
@@ -66,12 +75,16 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Automation & Tools */}
+        {/* TOOLS */}
         <div className="bg-card border border-border p-8 rounded-4xl hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-3 mb-6">
-            <ShieldCheck className="text-accent shrink-0" size={24} />
+            <ShieldCheck
+              size={20}
+              className="text-accent opacity-80 shrink-0"
+            />
             <h3 className="text-lg font-bold">Automation & Tools</h3>
           </div>
+
           <div className="flex flex-wrap gap-2">
             {devopsTesting.map((s) => (
               <span
@@ -85,12 +98,13 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* AI Tools Bar */}
+      {/* AI BAR */}
       <div className="bg-card border border-border p-8 rounded-4xl flex flex-col md:flex-row items-center justify-between gap-7">
         <div className="flex items-center gap-3">
-          <Sparkles className="text-accent shrink-0" size={20} />
+          <Sparkles size={18} className="text-accent opacity-80 shrink-0" />
           <span className="text-md font-medium">AI-Enhanced Workflow:</span>
         </div>
+
         <div className="flex flex-wrap justify-center gap-3 mt-1">
           {aiTools.map((tool) => (
             <span

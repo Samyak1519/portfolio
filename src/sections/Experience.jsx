@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-14 md:py-20 scroll-mt-28 md:scroll-mt-32 border-t border-border"
+      className="py-14 md:py-20 scroll-mt-28 md:scroll-mt-20 border-t border-border"
     >
       {/* Title with icon */}
       <div className="flex items-center gap-3 mb-8 md:mb-12">
