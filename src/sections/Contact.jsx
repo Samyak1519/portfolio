@@ -1,56 +1,68 @@
-import React from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { basicInfo } from "../data/portfolioData";
 
 const Contact = () => {
   return (
     <footer
       id="contact"
-      className="pt-16 md:pt-20 pb-8 md:pb-10 border-t border-border scroll-mt-28 md:scroll-mt-32"
+      className="pt-16 md:pt-20 pb-10 border-t border-border scroll-mt-28 md:scroll-mt-20"
     >
+      {/* MAIN CTA */}
       <div className="text-center mb-16 md:mb-20">
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 ">
+        <h2 className="text-6xl md:text-8xl font-black tracking-tighter mb-10">
           LET'S BUILD <br />
           <span className="text-accent text-outline">TOGETHER</span>
         </h2>
 
-        <div className="flex flex-col items-center gap-4">
+        {/* EMAIL + PHONE */}
+        <div className="flex flex-col items-center gap-5">
           <a
             href={`mailto:${basicInfo.email}`}
-            className="text-2xl md:text-3xl font-light hover:text-accent transition-colors border-b border-white/10 hover:border-accent pb-2"
+            className="flex items-center gap-3 text-2xl md:text-3xl font-light opacity-80 hover:opacity-100 hover:text-accent hover:translate-x-1 transition-all border-b border-white/10 hover:border-accent pb-2"
           >
+            <Mail size={20} className="opacity-70" />
             {basicInfo.email}
           </a>
+
           <a
             href={`tel:${basicInfo.phone}`}
-            className="text-2xl md:text-3xl font-light hover:text-accent transition-colors border-b border-white/10 hover:border-accent pb-2"
+            className="flex items-center gap-3 text-2xl md:text-3xl font-light opacity-80 hover:opacity-100 hover:text-accent hover:translate-x-1 transition-all border-b border-white/10 hover:border-accent pb-2"
           >
+            <Phone size={20} className="opacity-70" />
             {basicInfo.phone}
           </a>
         </div>
-      </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm font-mono">
-        <div className="flex gap-8">
+        {/* SOCIAL LINKS (moved here) */}
+        <div className="flex items-center justify-center gap-5 mt-10">
           <a
             href={basicInfo.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 hover:text-white transition-colors"
+            className="text-gray-400 flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-accent/50 hover:text-accent hover:bg-white/5 transition"
           >
-            GITHUB <ArrowUpRight size={14} />
+            <Github size={18} />
+            GitHub
+            <ArrowUpRight size={14} />
           </a>
+
           <a
             href={basicInfo.socials.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 hover:text-white transition-colors"
+            className="text-gray-400 flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-accent/50 hover:text-accent hover:bg-white/5 transition"
           >
-            LINKEDIN <ArrowUpRight size={14} />
+            <Linkedin size={18} />
+            LinkedIn
+            <ArrowUpRight size={14} />
           </a>
         </div>
-        <p>© 2026 {basicInfo.name}. All rights reserved.</p>
       </div>
+
+      {/* REAL FOOTER */}
+      <p className="text-center text-xs text-gray-500/70 font-mono tracking-wider mt-2">
+        Built & designed by {basicInfo.name}.
+      </p>
     </footer>
   );
 };

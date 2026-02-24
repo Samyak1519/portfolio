@@ -1,6 +1,5 @@
-import React from "react";
+import { ExternalLink, Folder, Github } from "lucide-react";
 import { projects } from "../data/portfolioData";
-import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -9,7 +8,8 @@ const Projects = () => {
       className="py-14 md:py-20 border-t border-border scroll-mt-28 md:scroll-mt-32"
     >
       <div className="mb-8 md:mb-12">
-        <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-2">
+        <h2 className="text-s font-mono text-gray-500 uppercase tracking-[0.3em] mb-2 flex items-center gap-5">
+          <Folder size={14} className="text-accent opacity-70 shrink-0" />
           Selected Work
         </h2>
         <h3 className="text-4xl md:text-5xl font-bold tracking-tight">

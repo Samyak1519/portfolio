@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Download, Mail } from "lucide-react";
+import { Briefcase, Cpu, Download, FolderGit2, Mail } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [showResume, setShowResume] = useState(false);
@@ -34,13 +34,27 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-10 text-s font-mono uppercase tracking-widest text-gray-500">
-          <a href="#experience" className="hover:text-white transition-colors">
+          <a
+            href="#experience"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Briefcase size={14} className="opacity-70" />
             Experience
           </a>
-          <a href="#projects" className="hover:text-white transition-colors">
+
+          <a
+            href="#projects"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <FolderGit2 size={14} className="opacity-70" />
             Projects
           </a>
-          <a href="#skills" className="hover:text-white transition-colors">
+
+          <a
+            href="#skills"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Cpu size={14} className="opacity-70" />
             Skills
           </a>
         </div>

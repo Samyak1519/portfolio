@@ -1,5 +1,7 @@
 // src/data/portfolioData.js
 
+import { details } from "framer-motion/client";
+
 export const basicInfo = {
   name: "Samyak Nimsarkar",
   role: "Software Developer",
@@ -61,6 +63,11 @@ export const projects = [
     description:
       "OTT-style cartoon streaming web app built with React and Tailwind.",
     tech: ["React", "Tailwind", "Router", "Vercel"],
+    details: [
+      "Dynamic content rows & category filtering",
+      "Optimized performance with lazy loading",
+      "Reusable component architecture",
+    ],
     link: "https://www.retrotoonz.in",
     github: "https://github.com/Samyak1519/RetroToonz",
   },

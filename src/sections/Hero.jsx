@@ -1,4 +1,4 @@
-import { Download, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Download, ExternalLink, Github } from "lucide-react";
 import { basicInfo } from "../data/portfolioData";
 
 const Hero = () => {
@@ -26,9 +26,15 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-accent transition-all duration-300"
+            className="px-8 py-4 bg-white text-black font-bold rounded-full 
+  hover:bg-accent transition-all duration-300 
+  flex items-center gap-2 group"
           >
             View Projects
+            <ArrowRight
+              size={18}
+              className="hidden md:inline transition-transform duration-300 group-hover:translate-x-1"
+            />
           </a>
 
           <a
