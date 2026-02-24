@@ -64,9 +64,9 @@ export const projects = [
       "OTT-style cartoon streaming web app built with React and Tailwind.",
     tech: ["React", "Tailwind", "Router", "Vercel"],
     details: [
-      "Dynamic content rows & category filtering. Dynamic content rows & category filtering. Dynamic content rows & category filtering. Dynamic content rows & category filtering.",
-      "Optimized performance with lazy loading.",
-      "Reusable component architecture.",
+      "Implemented show listing, category filtering, and search-based navigation to improve content discovery and user engagement.",
+      "Designed media-focused pages with optimized loading, responsive layouts, and smooth transitions for better performance and UX.",
+      "Structured the app with reusable components and dynamic routes, enabling easy scaling and future feature additions.",
     ],
     link: "https://www.retrotoonz.in",
     github: "https://github.com/Samyak1519/RetroToonz",
